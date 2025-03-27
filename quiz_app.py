@@ -5,6 +5,7 @@ import random
 # Set Dark Theme
 st.set_page_config(page_title="Python Quiz", page_icon="🧠", layout="wide")
 
+
 # Custom CSS
 st.markdown(
     """
@@ -98,7 +99,7 @@ if not st.session_state.quiz_state["quiz_over"]:
                 st.session_state.quiz_state["quiz_over"] = True
 
             st.rerun()
-
+st.image(["Quiz.png"], caption=["A Cozy Library"], use_container_width=True)
 # Display Final Score
 if st.session_state.quiz_state["quiz_over"]:
     st.write("## 🎊 Quiz Completed!")
